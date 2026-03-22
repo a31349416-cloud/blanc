@@ -2,7 +2,10 @@ import { LandingCard } from "./LandingCard";
 import styled from "@emotion/styled";
 
 const StyledSectoion = styled.section`
+  padding-top: 100px;
+  padding-bottom: 100px;
   & ul {
+    margin-top: 25xp;
     display: flex;
     flex-wrap: wrap;
     gap: 16px;
