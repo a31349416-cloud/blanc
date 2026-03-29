@@ -3,16 +3,24 @@ import styled from "@emotion/styled";
 const StyleCard = styled.li`
   width: 414px;
   & .black {
-    width: 414px;
-    height: 374px;
+    width: 288px;
+    height: 272px;
     background-color: black;
     display: flex;
     justify-content: center;
     align-items: end;
-    border-radius: 2px;
+    border-radius: 6px;
+    @media screen and (min-width: 1024px) {
+      width: 414px;
+      height: 374px;
+    }
   }
   & .thumb {
-    width: 334px;
+    width: 256px;
+    @media screen and (min-width: 1024px) {
+      width: 414px;
+      height: 374px;
+    }
   }
   & p {
     font-family: "Roboto";
@@ -24,7 +32,10 @@ const StyleCard = styled.li`
     padding-bottom: 25px;
     padding-left: 32px;
     border: 1px solid #00000060;
-    border-radius: 2px;
+    border-radius: 6px;
+    @media screen and (min-width: 1024px) {
+      padding-left: 32px;
+    }
   }
 `;
 
